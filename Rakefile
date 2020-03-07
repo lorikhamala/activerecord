@@ -1,0 +1,18 @@
+namespace :ctd do
+	desc "Greet to CTD Class"
+	task :greet do
+		puts "Welcome to Code the Dream"
+	end 
+end
+
+  require "sinatra/activerecord"
+  require "sinatra/activerecord/rake"  
+
+
+  namespace :db do
+    task :load_config do
+      require "./app" 
+      # loads our sinatra app to configure opening the database
+    end
+  end
+

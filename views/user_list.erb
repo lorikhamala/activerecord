@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html> <head> </head> <body>
+	
+<h1> People on our Mailing List </h1>
+<ul>
+	<% @users.each do |e| %>
+	<li><%= e.id.to_s + "  " + e.email %></li>
+	<% end %>
+</ul>
+<br>
+
+<h1> Admin Features</h1>
+
+<a href="/new">Add New User</a> <br>
+<a href="/remove">Delete a User</a> <br>
+
+
+</form>	
+</body> </html>
+
